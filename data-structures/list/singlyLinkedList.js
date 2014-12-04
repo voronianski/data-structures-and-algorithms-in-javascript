@@ -20,7 +20,10 @@ LinkedList.prototype.insert = function (element, after) {
 };
 
 LinkedList.prototype.remove = function (element) {
-
+    var afterNode = this.findPrevious(element);
+    if (afterNode.next) {
+        afterNode.next = afterNode.next.next;
+    }
 };
 
 LinkedList.prototype.find = function (element) {
@@ -34,7 +37,6 @@ LinkedList.prototype.find = function (element) {
 LinkedList.prototype.findPrevious = function (element) {
     var node = this.head;
     while (node.next && node.next.element !== element) {
-        console.log(node);
         node = node.next;
     }
     return node;
@@ -54,6 +56,14 @@ cities.insert('Kharkiv', 'Odessa');
 cities.insert('Lviv', 'Kharkiv');
 cities.insert('Kiev', 'Lviv');
 
+console.log('Display all:');
+cities.each(function (city) {
+   console.log(city);
+});
+
+cities.remove('Lviv');
+
+console.log('After remove:');
 cities.each(function (city) {
    console.log(city);
 });
