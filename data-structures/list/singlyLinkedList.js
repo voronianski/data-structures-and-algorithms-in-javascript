@@ -4,7 +4,7 @@ function Node (element) {
     this.prev = null;
 }
 
-// singly linked list
+// Singly linked list
 function LinkedList () {
     this.head = new Node('head');
 }
@@ -51,19 +51,20 @@ LinkedList.prototype.each = function (callback) {
 };
 
 var cities = new LinkedList();
-cities.insert('Odessa', 'head');
+cities.insert('Odessa');
 cities.insert('Kharkiv', 'Odessa');
 cities.insert('Lviv', 'Kharkiv');
-cities.insert('Kiev', 'Lviv');
+cities.insert('Kyiv', 'Lviv');
 
-console.log('Display all:');
+console.log('-----> Display all:');
 cities.each(function (city) {
    console.log(city);
 });
 
+console.log('-----> Remove "Lviv"');
 cities.remove('Lviv');
 
-console.log('After remove:');
+console.log('-----> After remove:');
 cities.each(function (city) {
    console.log(city);
 });
