@@ -1,7 +1,6 @@
 function Node (element) {
     this.element = element;
     this.next = null;
-    this.prev = null;
 }
 
 // Singly linked list
@@ -9,6 +8,7 @@ function LinkedList () {
     this.head = new Node('head');
 }
 
+// `after` is actual value and not `index`
 LinkedList.prototype.insert = function (element, after) {
     if (!after) {
         after = 'head';
@@ -26,6 +26,7 @@ LinkedList.prototype.remove = function (element) {
     }
 };
 
+// find by the element's `value`, not the index
 LinkedList.prototype.find = function (element) {
     var node = this.head;
     while (node.element !== element) {
@@ -50,11 +51,13 @@ LinkedList.prototype.each = function (callback) {
     }
 };
 
+// Examples
 var cities = new LinkedList();
 cities.insert('Odessa');
 cities.insert('Kharkiv', 'Odessa');
 cities.insert('Lviv', 'Kharkiv');
 cities.insert('Kyiv', 'Lviv');
+cities.insert('Lviv', 'Kyiv');
 
 console.log('-----> Display all:');
 cities.each(function (city) {
