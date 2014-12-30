@@ -1,0 +1,30 @@
+{
+  "name": "jsdsa",
+  "version": "1.0.0",
+  "description": "Basic data structures and algorithms implemented in JavaScript for browser and Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms",
+    "javascript",
+    "computer",
+    "science"
+  ],
+  "author": "Dmitri Voronianski <dmitri.voronianski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript/issues"
+  },
+  "homepage": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript"
+}
