@@ -1,6 +1,6 @@
 {
-  "name": "jsdsa",
-  "version": "1.0.0",
+  "name": "js-dsa",
+  "version": "0.0.0-alhpa",
   "description": "Basic data structures and algorithms implemented in JavaScript for browser and Node.js",
   "main": "index.js",
   "directories": {
