@@ -1,6 +1,8 @@
-# Data Structures and Algorithms in JavaScript
+# Data Structures and Algorithms in Javascript
 
 > Basic data structures and algorithms implemented in JavaScript.
+
+[![Data Structures and Algorithms in Javascript](https://raw.githubusercontent.com/voronianski/data-structures-and-algorithms-in-javascript/master/promo.png)](http://labs.voronianski.com)
 
 ## Disclaimer
 
