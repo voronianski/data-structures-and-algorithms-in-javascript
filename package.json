@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript/issues"
   },
-  "homepage": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript"
+  "homepage": "https://github.com/voronianski/data-structures-and-algorithms-in-javascript",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.4.2"
+  }
 }

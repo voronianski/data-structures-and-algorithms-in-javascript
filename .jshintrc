@@ -2,7 +2,6 @@
     "predef": [
         "after",
         "afterEach",
-        "angular",
         "before",
         "beforeEach",
         "define",
@@ -11,8 +10,7 @@
         "it",
         "xit",
         "xdescribe",
-        "should",
-        "Buffer"
+        "should"
     ],
 
     "asi" : false,
